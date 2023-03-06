@@ -3,7 +3,8 @@ const PORT = 9001;
 const app = express();
 
 app.use('/', (req, res) => {
-    console.log(res);
+    const coba = req.body;
+    console.log(coba);
 });
 
 app.listen(PORT, () => {
